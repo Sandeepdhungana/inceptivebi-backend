@@ -1,0 +1,8 @@
+flask
+flask-cors
+python-dotenv
+flask-socketio
+boto3
+flask_jwt_extended
+requests
+yarl
