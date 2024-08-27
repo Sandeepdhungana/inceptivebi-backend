@@ -37,6 +37,9 @@ def register():
 def login():
     data = request.get_json()
     user = User.get_user_by_email(data['email'])
+    print("The email is ", data['email'])
+    print("the password is ", data['password'])
+    print("the user is ", user)
 
     if user and user.verify_password(data['password']):
         token = create_access_token(identity=user.email)
